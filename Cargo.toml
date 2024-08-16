@@ -1,0 +1,11 @@
+[package]
+name = "roaring_bitmap_py"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.18", features = ["extension-module"] }
+roaring = "0.10.6"  # 或者你需要的版本
+
+[lib]
+crate-type = ["cdylib"]
